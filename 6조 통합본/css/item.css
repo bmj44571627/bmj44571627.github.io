@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+.cus_wrap {
+    max-width: 1400px;
+    height: 1100px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 250px;
+    position: relative;
+    background-position: center;
+}
+
+.cus_wrap .ecoce-bot {
+    position: absolute;
+    top: 5%;
+    right: 0;
+    width: 740px;
+}
+
+.cus_wrap .ministry-Environ-img {
+    position: absolute;
+    right: 0;
+    top: 290px;
+    width: 350px;
+}
+
+.cus_wrap .ecoce-img-wrap{
+    position: relative;
+    height: 100%;
+    top: 160px;
+    width: 960px;
+}
+
+.cus_wrap .ecoce-img-wrap .ecoce-img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+.cus_wrap .eco-clean-earth{
+    position: absolute;
+    right: 0;
+    top: 830px;
+    text-align: right;
+    line-height: 45px;
+    margin-top: 50px;
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown; /* -webkit- (Chrome, Safari, Opera 및 IOS 브라우저에서만 실행 */
+    animation-name: fadeInDown; /* animation-name -> 애니메이션의 중간 상태를 지정하기 위한 이름 정의 */
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+.fadeInRight p{
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: right;
+}
+.cus_wrap .fadeInRight p:first-child {
+    font-size: 40px;
+    font-weight: 600;
+}
+.cus_wrap .fadeInRight p:last-child { 
+    font-size: 30px;
+}
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+@media screen and (max-width: 1500px){
+    .cus_wrap {height: 60vw}  /* 높이가 너비의 60% */
+    .cus_wrap .ecoce-bot{top: 5%; width: 53%; right: 2%;}
+    .cus_wrap .ministry-Environ-img {top: 30%; width: 25%; right: 2%;} 
+    .cus_wrap .ecoce-img-wrap{top: 20%; width: 69%; left: 2%;}
+    .cus_wrap .eco-clean-earth {top: 90%; right: 2%;}
+}
+
+@media screen and (max-width: 1217px){
+    .cus_wrap .eco-clean-earth p:first-child {font-size: 30px;}
+    .cus_wrap .eco-clean-earth p:last-child {font-size: 25px;}
+}
+
+@media screen and (max-width: 940px){
+    .cus_wrap {height: auto; margin: 60px 2%;}
+    .cus_wrap .ecoce-bot {width: 75%; position: unset;}
+    .cus_wrap .ministry-Environ-img {display: none;}
+    .cus_wrap .ecoce-img-wrap{
+        width: 85%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 65px;
+        margin-bottom: 30px;
+    }
+    .cus_wrap .ecoce-img-wrap .ecoce-img {position: unset;}
+    .cus_wrap .eco-clean-earth {margin: 0; position: unset;}
+}
+
+@media screen and (max-width: 640px){
+    .cus_wrap .eco-clean-earth {line-height: 35px;}
+    .cus_wrap .eco-clean-earth p:first-child {font-size: 28px;}
+    .cus_wrap .eco-clean-earth p:last-child {font-size: 22px;}
+    .cus_wrap .ecoce-bot {width: 95%;}
+    .cus_wrap .ecoce-img-wrap {margin-top: 40px;}
+}
+
+/* display: block : 좀 더 넓은 범위를 지정할 때 사용함.
+                   <p>, <h1>, <div>, <ul>, <ol> 같은 태그로 block 요소를 사용할 때는 
+                   가로 화면 100%를 차지하므로 자동으로 앞뒤 줄바꿈이 됨 */
+
+
+/* CSS Position 사용법
+    1. 기준을 잡는다 (예. position: relative;)
+    2. 이동시킨다 (예. top: 50px;)
+    
+    relative -> 요소 자기 자신을 기준으로 배치
+    absolute -> 부모(조상) 요소를 기준으로 배치 */
+
+
